@@ -1,0 +1,92 @@
+.search-bar {
+    background-color: var(--background-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-basis: 80%;
+    border-radius: 55px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+}
+
+.search-icon {
+    width: 40px;
+    height: 46px;
+    margin-right: 20px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 20px;
+    font-size: 28px;
+    width: 80%
+}
+
+.submit-button {
+    border-radius: 35px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    padding: 15px 25px;
+    transition-property: background-color;
+    transition-duration: 150ms;
+}
+
+.submit-button__light {
+    border-radius: 35px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    padding: 15px 25px;
+    transition-property: background-color;
+    transition-duration: 150ms;
+}
+
+.submit-button__light:hover {
+    background-color: #a0bdca;
+}
+
+.submit-button__light:active {
+    background-color: #8098a3;
+}
+
+
+.submit-button:hover {
+    background-color: #686868;
+}
+
+.submit-button:active {
+    background-color: #5c5c5c;
+}
+
+@media (max-width: 1210px) {
+    .search-bar {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .search-bar {
+        padding: 10px;
+    }
+
+    .submit-button, .submit-button__light {
+        border-radius: 35px;
+        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .search-input {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .search-icon {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    .submit-button, .submit-button__light {
+        display: none;
+    }
+}

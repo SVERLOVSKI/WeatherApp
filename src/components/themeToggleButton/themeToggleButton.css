@@ -1,0 +1,92 @@
+.theme-toggle-button {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.toggle-button.dark {
+    width: 100px;
+    height: 30px;
+    background-color: #292929;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.toggle-button.light {
+    width: 100px;
+    height: 30px;
+    background-color: #9cb8c9;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.toggle-button.dark:hover {
+    background-color: #3b3b3b;
+}
+
+.toggle-button.light:hover {
+    background-color: #4c697a;
+}
+
+.circle {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.4s;
+    left: 2px;
+    margin: 0px 5px;
+}
+
+.circle.active {
+    transform: translateX(60px);
+}
+
+.active-theme {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .active-theme {
+        font-size: 12px;
+    }
+
+    .toggle-button.light, .toggle-button.dark {
+        width: 70px;
+        margin-bottom: 5px;
+    }
+
+    .circle.active {
+        transform: translateX(30px);
+    }
+
+    .theme-toggle-button  {
+        width: auto;    
+    }
+}
+
+@media (max-width: 890px) {
+    .theme-toggle-button {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}

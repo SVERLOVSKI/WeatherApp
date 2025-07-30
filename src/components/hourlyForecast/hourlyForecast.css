@@ -1,0 +1,122 @@
+.hourly-forecast {
+    background-color: var(--backgorund-color);
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.hourly-forecast-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hourly-forecast-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.hourly-forecast-item {
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    flex-basis: 140px;
+}
+
+.item-time {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hourly-item-temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.item-wind {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 1300px) {
+    .hourly-forecast-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hourly-forecast-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-basis: 0;
+    }
+
+    .item-time, .hourly-item-temperature, .item-wind {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .item-icon.hourly {
+        display: none;
+    }
+
+    .hourly-forecast-item {
+        display: block;
+        text-align: left;
+    }
+
+    .item-time {
+        margin-bottom: 25px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid grey;
+    }
+
+    .hourly-item-temperature {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .item-wind {
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hourly-forecast-title {
+        font-size: 24px;
+    }
+
+    .hourly-forecast {
+        flex-grow: 0;
+        flex-basis: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    .hourly-forecast-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .item-time {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .hourly-item-temperature {
+        font-size: 14px;
+    }
+
+    .item-wind {
+        font-size: 14px;
+    }
+}

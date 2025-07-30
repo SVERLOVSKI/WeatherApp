@@ -1,0 +1,85 @@
+body.dark {
+    /* Дефолтные стили (темная тема по умолчанию) */
+    --text-color: #ffffff;
+    --backgorund-color: ##444444;
+    --app-background: linear-gradient(100deg, rgba(120, 120, 120, 1) 0%, rgba(36, 36, 36, 1) 100%);
+
+    color: var(--text-color);
+    background: var(--app-background);
+}
+
+body {
+    --text-color: #444444;
+    --app-background: linear-gradient(100deg,rgba(255, 255, 255, 1) 0%, rgba(70, 97, 115, 1) 100%);
+
+    color: var(--text-color);
+    background: var(--app-background);
+}
+
+.main-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.interface-panel {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weather-forecast {
+    max-width: 1345px;
+    margin: 0 auto;
+}
+
+.future-forecast {
+    display: flex;
+    gap: 50px;
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 890px) {
+    .interface-panel {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .future-forecast {
+        gap: 20px;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 425px) {
+    .future-forecast {
+        gap: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .interface-panel {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,255 @@
+.current-weather-bar {
+    background-color: var(--background-color);
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+.location {
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.city_name {
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+
+.region {
+    font-size: 24px;
+}
+
+.temperature-block {
+    text-align: center;
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.temperature-feelslike {
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+.feelslike-value {
+    font-weight: bold;
+}
+
+.forecast-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.sunrise {
+    margin-bottom: 20px;
+}
+
+.sunrise-information, .sunset-information {
+    margin-left: 10px;
+}
+
+.sunrise, .sunset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sunrise-title, .sunset-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sunrise-time, .sunset-time {
+    font-size: 20px;
+}
+
+.sky {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sky-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sky-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.additional-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex-basis: 300px;
+    justify-content: center;
+}
+
+.humidity, .wind, .pressure, .uv {
+    text-align: center;
+    width: 110px;
+}
+
+.humidity-value, .wind-value, .pressure-value, .uv-value {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.humidity-title, .wind-title, .pressure-title, .uv-title {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .forecast-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .additional-information {
+        gap: 10px;
+    }
+
+    .temperature {
+        font-size: 66px;
+    }
+
+    .temperature-feelslike {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .city_name {
+        font-size: 44px;
+        margin-bottom: 10px;
+    }
+
+    .current-weather-bar {
+        gap: 20px;
+    }
+
+    .temperature-block {
+        flex-basis: 130px;
+    }
+
+    .temperature {
+        font-size: 30px;
+    }
+
+    .temperature-feelslike {
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+    .sunrise-title, .sunset-title {
+        font-size: 20px;
+    }
+
+    .additional-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 120px;
+    }
+
+    .humidity, .wind, .pressure, .uv {
+        margin-bottom: 15px;
+        max-width: 100px
+    }
+
+    .humidity-value, .humidity-title, .wind-title, .wind-value, .pressure-title, .pressure-value, .uv-title, .uv-value {
+        margin: 0;
+    }
+
+    .forecast-icon {
+        display: none;
+    }
+
+    .sky-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sky-title {
+        font-size: 20px;
+    }
+
+    .sky {
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    .sun-information {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    .city_name {
+        font-size: 34px;
+        text-align: center;
+    }
+    
+    .region {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .temperature-block {
+        border-radius: 25px;
+        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px 0px;
+        margin-bottom: 10px;
+    }
+
+    .current-weather-bar {
+        display: block;
+    }
+
+    .sunrise-information, .sunset-information {
+        margin-left: 0;
+    }
+
+    .sunset {
+        margin-bottom: 25px;
+    }
+
+    .sky-title {
+        margin-bottom: 20px;
+    }
+
+    .sky-icon {
+        display: none;
+    }
+
+    .additional-information {
+        border-radius: 25px;
+        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+        padding: 10px 0px;
+    }
+
+    .temperature-feelslike {
+        margin-bottom: 20px;
+    }
+
+    .sun-information {
+        margin-top: 10px;
+    }
+}

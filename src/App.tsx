@@ -8,7 +8,7 @@ import './App.css'
 function App() {
   const [darkTheme, setDarkTheme] = useState<boolean>(true);
   return (
-    <Router basename='/SkyWatch'>
+    <Router basename='/WeatherApp'>
       <Routes>
         <Route path="/" element={<MainPage darkTheme={darkTheme} setDarkTheme={setDarkTheme} />} />
         <Route path="/forecast/:date" element={<SingleForecastPage darkTheme={darkTheme} setDarkTheme={setDarkTheme} />} />

@@ -1,8 +1,8 @@
 {
-  "name": "SkyWatch",
+  "name": "WeatherApp",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://sverlovski.github.io/SkyWatch",
+  "homepage": "https://sverlovski.github.io/WeatherApp",
   "type": "module",
   "scripts": {
     "dev": "vite",
